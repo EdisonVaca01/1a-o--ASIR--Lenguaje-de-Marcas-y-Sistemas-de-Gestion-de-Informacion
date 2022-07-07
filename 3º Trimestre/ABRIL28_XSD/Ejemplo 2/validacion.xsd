@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Describe la estructura de un xml simple -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="items">
+        <!-- elemento raiz <items> -->
+        <xs:complexType>
+            <!-- items es un elemento complejo -->
+            <xs:sequence>
+                <!-- contiene una secuencia de elementos -->
+                <xs:element name="item" minOccurs="0" maxOccurs="unbounded">
+                    <!-- Puedes haber 0 o mas <item> -->
+                    <xs:complexType>
+                        <!-- Es un elemento complejo -->
+                        <xs:sequence>
+                            <!-- Contiene una secuencia de elementos -->
+                            <xs:element name="nombre" type="NoVacio" minOccurs="1" /> <!-- no vacio (mirar NoVacio al final) -->
+                            <xs:element name="foto" minOccurs="1">
+                                <xs:simpleType>
+                                    <!-- Restricciones sobre elementos -->
+                                    <xs:restriction base="xs:anyURI">
+                                        <xs:minLength value="1" />
+                                        <xs:pattern value="http://.*(png|jpg|jpeg|gif)" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="etiquetas" type="NoVacio" minOccurs="1" />
+                            <xs:element name="diametro" type="xs:positiveInteger" minOccurs="1" />
+                            <xs:element name="ancho" type="xs:positiveInteger" minOccurs="1" />
+                            <xs:element name="precio" type="decimalPositivo" minOccurs="1" />
+                            <xs:element name="tamanio" minOccurs="0" default="">
+                                <!-- example of enum field -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="" />
+                                        <xs:enumeration value="Big" />
+                                        <xs:enumeration value="Small" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="decimalPositivo">
+        <!-- Describe los tipos que pueden ser reutilizados -->
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0" />
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NoVacio">
+        <!-- Describe los tipos que pueden ser reutilizados -->
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:pattern value=".*[^\s].*" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

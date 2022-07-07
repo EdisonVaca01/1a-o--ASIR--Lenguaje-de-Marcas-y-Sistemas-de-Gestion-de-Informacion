@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p onclick="suma()">HAZ CLICK</p>
+
+    <input id="texto" type="text">
+    <br>
+    <span id="error" style="display: none;">Error</span>
+    <button onclick="mostrar()">Enviar</button>
+    <button onclick="cambiaType()">CAMBIAR OJITO</button>
+</body>
+<script>
+    /**
+     * FUNCIONES -> Bloques de codigo que se ejecutan juntos.
+     * 
+     * Estructura de una funcion.
+     * 
+     * function NOMBRE (){
+     *      LINEAS DE CODIGO;
+     * }
+     * 
+     * Para ejecutar bloque de codigo, llamo a la funcion por su nombre
+     * NOMBRE();
+     */
+    
+
+    // Creo mi funcion (bloque de codigo)
+    function suma() {
+        let a = 5;
+        let b = 5;
+        console.log(a + b);
+    }
+
+    // Ejecuto mi bloque de codigo (funcion) llamada suma
+    //suma(); 
+
+    /**
+     * 1. Capturar linea.
+     * 2. Capturar dato.
+     * 2. Filtrar dato.
+     */
+
+    function mostrar() {
+        // Paso 1.
+        let input = document.getElementById('texto');
+
+        // Paso 2
+        let datoInput = input.value;
+        console.log(datoInput);
+
+        let mensajeError = document.getElementById('error');
+
+        if(datoInput == ''){
+            mensajeError.style.display = 'block';
+            mensajeError.style.color = 'red';
+        }
+        if(datoInput != ''){
+            mensajeError.style.display = 'none';
+        }
+    }
+
+    // Funcion que cambia el type del input a password
+    function cambiaType(){
+        // 1. Capturo linea
+        let input = document.getElementById('texto');
+
+        // 2. Capturo dato
+        let valorAtributo = input.getAttribute('type');
+
+        // 3. Comparo dato 
+        if(valorAtributo == 'text'){
+            input.setAttribute('type', 'password');
+        }
+        if(valorAtributo == 'password'){
+            input.setAttribute('type', 'text');
+        }
+    }
+</script>
+
+</html>

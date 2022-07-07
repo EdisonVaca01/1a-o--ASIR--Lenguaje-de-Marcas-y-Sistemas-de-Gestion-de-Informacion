@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bdalumnos xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="alumnos.xsd">
+    <alumno>
+        <nombre id="1">sergio</nombre>
+        <padre>antonio</padre>
+        <madre>carmen</madre>
+        <edad>18</edad>
+        <ciudad>madrid</ciudad>
+    </alumno>
+    <alumno>
+        <nombre id="2">pepe</nombre>
+        <padre>luis</padre>
+        <madre>ana</madre>
+        <edad>20</edad>
+        <ciudad>madrid</ciudad>
+    </alumno>
+</bdalumnos>

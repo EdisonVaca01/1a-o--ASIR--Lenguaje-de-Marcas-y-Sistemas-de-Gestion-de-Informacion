@@ -1,0 +1,18 @@
+{
+    "coche" : {
+        "neumaticos" : {
+            "DI" : "",
+            "DD" : "",
+            "TI" : "",
+            "TD" : "",
+            "Reserva": ""
+        },
+        "motor" : {
+            "marca" : "",
+            "cilindrada" : "",
+            "nombre" : ""
+        },
+        "numero plazas" : 4,
+        "num_ventanas" : 5
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <!--EN ESTE APARTADO SE ENCONTRARÁ TODO SOBRE LOS METAS,LNKS,TITLE Y LOGO DE LA MARCA-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Vicwas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <!--EN ESTA LÍNEA DE CÓDIGO ADJUNTAMOS EL LINK DE FONTAWESOME PARA LOS ICONOS DE LAS SIGUIENTES PÁGINAS-->
+    <script src="https://kit.fontawesome.com/568f2cee93.js" crossorigin="anonymous"></script>
+    <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS INSERTANDO UNA IMAGEN (PUEDE SER ICONO) EN LA PESTAÑA DEL NAVEGADOR-->
+    <link rel="icon" type="image/png" href="/img/Vicwas-pestaña.png" />
+    <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS AGREGANDO LOS AUTORES DE LA PÁGINA WEB-->
+    <meta name="author" content="Edison Gabriel Vaca Cifuentes & Victor Olguin">
+    <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS CREANDO UNA DESCRIPCIÓN  DE NUESTRA PÁGINA DONDE LOS CLIENTES PUEDAN LEER Y SABER DE  QUE TRATA NUESRTA PÁGINA-->
+    <meta name="description"
+      content="Vicwas es un Blog donde comentamos las noticias más recientes del mundo del deporte como por ejemplo de UFC como de Fútbol y Baloncesto desde una respectiva general">
+    <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS AÑADIENDO PALABRAS QUE DESTAQUEN  PARA QUE EL SEO DE GOOGLE PUDEDA  RECOMENDAR A MÁS GENTE NUESTRA PÁGINA -->
+    <meta name="keywords" content="Últimas noticias,Fútbol,Baloncesto,UFC,Opinión,Crítica">
+    <!--EN ESTA LÍNEA DE CÓDIGO LA HEMOS REALIZADO YA QUE LO NECESITAMOS PARA EL VÍDEO DE PORTADA (ÚNICAMENTE SIRVE EN FIREFOX HEMOS INVESTIGADO EL CÓDIGO Y AÚN NO HEMOS PODIDO ENCONTRAR LA SOLUCIÓN)-->
+    <meta property="og:video:type" content="aplication/mp4">
+  </head>
+
+  <body>
+
+    <nav>
+      <!--PONDREMOS ESTAS LÍNEAS PARA DEMOSTRAR EL ICONO DE "HAMBURGUESA"-->
+      <input type="checkbox" id="check1">
+      <label for="check1" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!--EN ESTE CASO HEMOS PUESTO UN LABEL CON EL NOMBRE DE NUESTRA MARCA-->
+      <label class="logo">Vicwas</label>
+      <!--POSTERIORMENTE NOSOTROS HACEMOS UNA LISTA DESORDENADA DONDE CONTIENEN UNOS LINKS PARA REEDIRIGIR A LAS SIGUIENTES PÁGINAS-->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="futbol.html">Fútbol</a></li>
+        <li><a href="baloncesto.html">Baloncesto</a></li>
+        <li><a href="ufc.html">UFC</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="accesocliente.html">Clientes</a></li>
+      </ul>
+    </nav>
+
+    <br>
+    <!--NOSOTROS AHORA VAMOS A PONER UN VÍDEO COMO PORTADA DE LA PÁGINA (HEMOS  TENIDO QUE PONER UN META QUE SE ENCUENTRA EN LA CABAZERA DE LA PÁGINA)-->
+    <video onloadedmetadata="this.muted=true" autoplay loop>
+      <source src="/video/contacto.mp4">
+    </video>
+
+    <!--COLOCAREMOS UN PEQUEÑO TEXTO PARA QUE EL CLIENTES SE PUEDA UBICAR-->
+    <section class="escritura1">
+      <h3>Nos puede localizar en ...</h3>
+    </section>
+
+    <!--EN ESTE APARTADO NOSOTROS  INDICAREMOS LA UBICACIÓN DE NUESTRA EMPRESA(NO PODEMOS MODIFICAR LA PARTE DE EDICIÓN, YA QUE CAMBIA LOS FACTORES INDICADOS EN CSS)-->
+    <section class="local">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6074.591776061534!2d-3.690611922426986!3d40.42444658492246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228976908d27b%3A0x346d1307ffb12c4b!2sRecoletos%2C%20Madrid!5e0!3m2!1ses!2ses!4v1635795743337!5m2!1ses!2ses"
+        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </section>
+    <!--COLOCAREMOS UN PEQUEÑO TEXTO PARA QUE EL CLIENTES SE PUEDA UBICAR-->
+    <section class="escritura1">
+      <h3>Puede rellenar este formulario donde nosotros nos ponderemos en contacto lo antes posible</h3>
+    </section>
+
+    <!--NOSOTROS AHORA ESTABLECEREMOS UN CONTACT -->
+
+    <div class="contenedor-1">
+      <div class="caja">
+        <div class="izqui"></div>
+        <div class="dere">
+          <h2>CONTÁCTENOS</h2>
+          <input type="text" class="campo" placeholder="Su Nombre">
+          <input type="text" class="campo" placeholder="Su E-mail">
+          <input type="text" class="campo" placeholder="Su teléfono">
+          <textarea placeholder="Mensaje" class="campo"></textarea>
+          <button class="boton">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--AHORA COMENZAMOS CON EL FOOTER-->
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="fila">
+          <div class="footer-columna">
+            <h4>Vicwas</h4>
+          </div>
+          <div class="footer-columna">
+            <h4>Deportes</h4>
+            <ul>
+              <li><a href="futbol.html">Fútbol</a></li>
+              <li><a href="baloncesto.html">Baloncesto</a></li>
+              <li><a href="ufc.html">UFC</a></li>
+            </ul>
+          </div>
+          <div class="footer-columna">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="accesocliente.html">Cliente</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-columna">
+            <h4>Síguenos</h4>
+            <div class="redes-sociales">
+              <a href="https://www.facebook.com/profile.php?id=100074350901169"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/vicwas_oficial"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/vicwass_oficial/"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

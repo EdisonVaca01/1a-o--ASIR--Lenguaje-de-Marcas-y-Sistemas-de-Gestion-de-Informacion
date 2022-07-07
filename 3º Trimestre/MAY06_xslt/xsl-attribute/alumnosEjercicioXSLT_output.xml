@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><alumnos>
+    <alumno id="">
+        <nombre>Peter</nombre>
+        <apellido1>Parker</apellido1>
+        <apellido2/>
+        <dni>11223344TY</dni>
+        <calificacion>0</calificacion>
+        <fechaNacimiento>30/03/1992</fechaNacimiento>
+        <lugarNacimiento>New York</lugarNacimiento>
+    </alumno>
+    <alumno id="">
+        <nombre>Juan</nombre>
+        <apellido1>García</apellido1>
+        <apellido2>Sánchez</apellido2>
+        <dni>175493344TY</dni>
+        <calificacion>5</calificacion>
+        <fechaNacimiento>30/09/1999</fechaNacimiento>
+        <lugarNacimiento>Atlanta</lugarNacimiento>
+    </alumno>
+</alumnos>

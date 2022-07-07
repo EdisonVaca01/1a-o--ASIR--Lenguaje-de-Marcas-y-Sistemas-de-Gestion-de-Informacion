@@ -1,0 +1,319 @@
+/*EN ESTE CASO NOSOTROS ESTAMOS PONIENDO ESTE ENLACE DE GOOGLE PARA LA FUENTE DE NUESTRA PÁGINA*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/*AHORA ESTAMOS REALIZANDO LA CONFIGURACIÓN DE LOS BORDES DE LA PÁGINA WEB COMO LA FUENTE DE LENTRA LOS MÁRGENES, EL ESPACIO*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+/*EN ESTE CASO NOSOTROS ESTAREMOS ELIGIENDO LA FUENTE DE LA LETRA DE NUESTRO BODY*/
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*AHORA NOSOTROS CREAREMOS LA BARRA DONDE SE ENCONTRARÁN LAS LISTAS PARA PODER SELECCIONAR LOS APARTADOS COMO "FÚTBOL","BALONCESTO","UFC" ETC..*/
+nav {
+  background: #171c24;
+  height: 80px;
+  width: 100%;
+}
+/*LO QUE ESTAMOS REALIZANDO, ES QUE NUESTRO NUESTRO NOMBRE "VICWAS" SE ENCUENTRE CON LAS SIGUIENTES CARACTERÍSTICAS*/
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+/*AHORA NOSOTROS ESTAREMOS COLOCANDO LAS "UL" EN LA UBICACIÓN DEL CENTRO*/
+nav ul {
+  float: right;
+  margin-right: 200px;
+}
+/*LO QUE ESTAMOS HACIENDO AHORA ES QUE LAS UL SE ENCUENTRE EN FORMA DE LÍNEA Y TAMBIÉN EN LA UBICACIÓN CENTRAL DEL NAV*/
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+/*EN ESTE CASO NOSOTROS ESTAMOS PONIENDO COLOR,FILTRO,TAMAÑO A LAS "UL"(NOMBRE,SOBRE NOSOTROS,FÚTBOL,BALONCESTO ETC...)*/
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+/*EN ESTA LÍNEA ESTAREMOS MODIFICANDO EL ICONO "HAMBURGUESA"*/
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+/*EN ESTA SECCIÓN ESTAMOS QUITANDO EL CUADRADO DE CHECK (SÍMBOLO AL SELECCIONARLO)*/
+#check1 {
+  display: none;
+}
+
+/*RESPONSIVE EN LA BARRA DE NAVEGACIÓN*/
+
+@media (max-width: 1366px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1300px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #171c24;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #c0965f;
+  }
+  #check1:checked ~ ul {
+    left: 0;
+  }
+}
+/*EN ESTE APARTADO ESTAREMOS EDITANDO  NUESTRO VÍDEO  EN EL ASPECTO  DE ANCHO COMO DEL ESPACIO */
+video {
+  width: 100%;
+  padding: 13px 0;
+}
+
+/*EMPEZAMOS A REALIZAR EL EDIT DE UNA PUBLICACIÓN*/
+
+/*ESTAMOS DANDO UNA HANCHURA A NUESTRA IMAGEN*/
+img {
+  width: 95%;
+  height: 100%;
+}
+
+/*NOSOTROS AHORA ESTAMOS MODIFICANDO EL TÍTULO "XAVI DA UN GRAN DISCURSO"*/
+.titulo {
+  font-size: 35px;
+}
+/*AHORA NOSOTROS ESTAMOS AÑADIENDO A TODO EL TEXTO QUE SE ENCUENTRE DE FORMA CENTRAL,QUE EL FONDO SEA BLANCO ETC.*/
+.blog-publicacion {
+  width: 100%;
+  max-width: 98 rem;
+  padding: 5rem;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  margin: 0 auto;
+}
+/*ESTAMOS AGREGANDO UNA MODIFICACIÓN  EN LA FECHA PARA QUE  ENCEUNTRE DE MEJOR FORMA*/
+.blog-publicacion__fecha span {
+  color: rgba(0, 0, 0, 5);
+  font-size: 1.6 rem;
+  font-weight: 600;
+  margin: 5rem 0;
+}
+/*AHORA NOSOTROS ESTAMOS AGREGANDO ATRIBUTOS AL TEXTO QUE TENEMOS "AHORA NUESTRO EXPERTO"*/
+.blog-publicacion__comentario {
+  color: rgba(0, 0, 0, 5);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 2%;
+  text-align: center;
+}
+/*AGREGAMOS ATRIBUTO A NUESTRO PQUEÑO PÁRRAFO COMO LA FUENTE Y EL TAMAÑO DE LA LETRA*/
+.comentario p {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+/*A PARTIR DE AQUÍ EMPEZAMOS A REALIZAR EL FLEX-CONTAINER PARA QUE HAIGA UNA COMPATIBILIDAD ENTRE LA OPINIÓN Y EL TWIT*/
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+}
+
+.flex-container > div {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 99px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+/* RESPONSIVE  DE PUBLIACACIÓN */
+@media screen and (max-width: 768px) {
+  .blog-publicacion {
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+  .blog-publicacion__img {
+    width: 100%;
+    height: auto;
+  }
+  .blog-publicacion__comentario {
+    font-size: 15px;
+  }
+}
+/* RESPONSIVE DE ASIDE */
+@media screen and (max-width: 768px) {
+  .aside {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comentario p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+/* RESPONSIVE DEL FLEX-CONTAINER */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    font-size: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .flex .flex-container div {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container > div {
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+/*AHORA COMENZAMOS CON EL FOOTER*/
+
+/*EN ESTE CASO NOSOTROS ESTAMOS ESTABLECIENDO EL ESPACIO EN EL QUE SE VA HA ENCONTRAR NUESTRO CONTENEDOR*/
+.contenedor {
+  max-width: 1170px;
+  margin: auto;
+}
+/*LO QUE ESTAMOS HACIENDO AHORA MISMO ES ESTABLECER DE FORMA CORRECTA EL CONTENIDO EN EL QUE SE TIENE QUE ADECUAR CON EL FOOTER*/
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*AQUÍ ESTAMOS QUITANDO LO QUE SERÍAN LOS PUNTOS * DE LAS LISTAS*/
+ul {
+  list-style: none;
+}
+/*EN ESTE MOMENTO NOSOTROS ESTAMOS COLOCANDO EL ESPACIO DONDE SE VA A SITUAR LO QUE SERÁ NUESTRO FOOTER*/
+.espacioabajo {
+  background-color: blanchedalmond;
+  padding: 50px;
+  padding-top: 50px;
+  margin-top: 655px;
+}
+
+.footer {
+  background-color: #171c24;
+  padding: 70px 0;
+  padding-top: 50px;
+}
+/*AHORA ESTAMOS ESTABLECIENDO EL HANCHO ENTRE LAS COLUMNAS*/
+.footer-columna {
+  width: 25%;
+  padding: 0 15px;
+}
+
+/*ACONTINUACIÓN ESTAMOS DICIENDO QUE LOS TÍTULOS DE CADA COLUMNA TENGAN UN H4 Y CAMBIAREMOS ALGUNOS ASPECTOS*/
+
+.footer-columna h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: px;
+  position: relative;
+}
+/* CON LO QUE ESTAMOS HACIENDO AHORA ES QUE EXISTA UNA ESPACIO ENTRE PALABRA-PALABRA (FUENTE ENCONTRADA EN GOOGLE)*/
+.footer-columna ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+/*AHORA ESTAMOS EDITANDO TODO LO QUE SERÍA LA FUENTE DEL FOOTER,LA SANGRÍA, EL COLOR DE LAS LETRAS*/
+.footer-columna ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300px;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+/*ESTA EDICIÓN ES EL MOVIMIENTO AL SELECCIONAR UNA OPCIÓN (MOVERSE)*/
+.footer-columna ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+/*ESTAMOS EDITANDO LO QUE SERÍA LOS SITIOS EN LOS QUE SE VAN A ENCONTRAR LOS ICONOS DE LAS REDES SOCIALES*/
+.footer-columna .redes-sociales a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+/*AHORA ESTAMOS EDITANDO LO QUE SERÍA LA ANIMACIÓN DE LOS SÍMBOLOS DE LAS REDES SOCIALES*/
+.footer-columna .redes-sociales a:hover {
+  color: #171c24;
+  background-color: #ffffff;
+}
+
+/*RESPONSIVE DEL FOOTER*/
+
+@media (max-width: 767px) {
+  .footer-columna {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-columna {
+    width: 100%;
+  }
+}

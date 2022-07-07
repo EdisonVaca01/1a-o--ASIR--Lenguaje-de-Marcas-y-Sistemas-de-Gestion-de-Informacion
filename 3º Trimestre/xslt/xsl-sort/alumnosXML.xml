@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centroAcademico>
+    <profesor>
+        <nombre>Cristian</nombre>
+        <apellido>Gómez</apellido>
+		<asignaturas>
+			<asignatura>
+				<nombre>Lenguaje de Marcas</nombre>
+				<curso id = "DAW">
+					<alumnos>
+						<persona idAlumno = "1">
+							<nombreAlumno>Juan</nombreAlumno>
+							<apellido>Sánchez</apellido>
+							<edad>20</edad>
+						</persona>
+						<persona  idAlumno = "2">
+							<nombreAlumno>Eric</nombreAlumno>
+							<apellido>Tdier</apellido>
+							<edad>22</edad>
+						</persona>
+						<persona  idAlumno = "3">
+							<nombreAlumno>Inés</nombreAlumno>
+							<apellido>Sanz</apellido>
+							<edad>26</edad>
+						</persona>
+						<persona  idAlumno = "4">
+							<nombreAlumno>María</nombreAlumno>
+							<apellido>García</apellido>
+							<edad>18</edad>
+						</persona>
+					</alumnos>
+				</curso>
+			</asignatura>
+			<asignatura>
+				<nombre>Despliegue de Aplicaciones</nombre>
+				<curso id = "DAW" anyo = "2">
+					<alumnos>
+						<persona idAlumno = "A">
+							<nombreAlumno>David</nombreAlumno>
+							<apellido>Sánchez</apellido>
+							<edad>19</edad>
+						</persona>
+						<persona  idAlumno = "B">
+							<nombreAlumno>Elisa</nombreAlumno>
+							<apellido>Abie</apellido>
+							<edad>22</edad>
+						</persona>
+						<persona  idAlumno = "C">
+							<nombreAlumno>Carlos</nombreAlumno>
+							<apellido>Ortiz</apellido>
+							<edad>31</edad>
+						</persona>
+						<persona  idAlumno = "D">
+							<nombreAlumno>Sara</nombreAlumno>
+							<apellido>Olmo</apellido>
+							<edad>28</edad>
+						</persona>
+					</alumnos>
+				</curso>
+			</asignatura>
+		</asignaturas>
+    </profesor>	
+</centroAcademico>

@@ -1,0 +1,39 @@
+En esta practica el objetivo es realizar un diseño de una pagina web con bootstrap o materialize que contenga datos variables sacados de un fichero XML creado desde cero.
+
+Los ficheros que deben entregarse son los siguientes:
+1. Fichero xml.
+Este fichero debe tener datos sobre los modulos del ciclo de ASIR. 
+La etiqueta raiz es "ASIR" y dentro de ella debe haber informacion de los modulos divididos en primer y segundo curso.
+Cada modulo debe contener un identificador, nombre y contenido referente a la materia.
+
+2. Fichero html.
+Este fichero debe contener un script que lea el fichero xml construido anteriormente y lo reproduzca en el html.
+Para ello se deben elegir entre distintas estructuras facilitadas por bootstrap o materialize como por ejemplo cards o tablas y rellenarlas con estos datos.
+
+
+Se valora:
+- Diseño
+- Cantidad de elementos.
+- Calidad de elementos.
+- Optimizacion del codigo.
+- Calidad del script.
+- Personalización de elementos
+
+Entrega:
+La entrega estará abierta durante 10 dias, concretamente hasta el domingo 27 de marzo a las 23:59. Después NO se recogen ejercicios.
+
+Calificaciones:
+Las calificaciones máximas posibles variarán en función de la fecha de entrega, premiando la brevedad de la entrega siempre y cuando sea funcional. Serán las siguientes:
+- Fin de semana: 10 puntos.
+- Lunes: 8 puntos.
+- Martes: 7 puntos.
+- Miercoles: 5 puntos.
+- Jueves: 4,5 puntos.
+- Viernes y demas dias: 3 puntos.
+
+Formato:
+El formato de entrega consta de una carpeta comprimida con todo el contenido del proyecto con el formato "Apellido1_Apellido2_Nombre". 
+
+Penalizaciones:
+- Entrega sin comprimir: -1 punto al máximo posible.
+- Entrega con formato de carpeta incorrecto: -0,75 puntos al máximo posible.

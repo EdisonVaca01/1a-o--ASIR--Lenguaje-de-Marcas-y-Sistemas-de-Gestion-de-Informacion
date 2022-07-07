@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clase>
+    <muebles>
+        <mesa id="1" patas="4" />
+        <mesa id="2" patas="2" />
+        <mesa id="3" patas="8" />
+    </muebles>
+    <personas>
+        Antes de cosa
+        <persona>
+            COSAS
+        </persona>
+        Despues de cosa y antes de Kevin
+        <persona nombre="Kevin" />
+        Despues de kevin y antes de Dani
+        <persona nombre="Dani" />
+        Despues de Dani y antes de Alvaro
+        <persona nombre="Alvaro" />
+        Despues de Alvaro
+    </personas>
+</clase>

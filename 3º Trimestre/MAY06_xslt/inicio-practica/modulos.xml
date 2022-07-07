@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ifp>
+    <autor>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <correo></correo>
+    </autor>
+    <modulos ciclo="">
+        <curso nombre="primero">
+            <modulo id="" nombre="" profesor="" tecnologias=""/>
+        </curso>
+        <curso nombre="segundo">
+            <modulo id="" nombre="" profesor="" tecnologias=""/>
+        </curso>
+    </modulos>
+    <profesores>
+        <profesor id="">
+            <nombre></nombre>
+            <correo></correo>
+            <materia></materia>
+        </profesor>
+    </profesores>
+</ifp>

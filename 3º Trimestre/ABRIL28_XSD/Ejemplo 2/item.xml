@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="validacion.xsd">
+    <item>
+        <nombre>Item 1</nombre>
+        <foto>http://example.com/photo1.png</foto>
+        <etiquetas>Etiqueta1, Etiqueta2</etiquetas>
+        <diametro>32</diametro>
+        <ancho>540</ancho>
+        <precio>60</precio>
+        <tamanio>Big</tamanio>
+    </item>
+    <item>
+        <nombre>Item 2</nombre>
+        <foto>http://example.com/photo2.png</foto>
+        <etiquetas>Etiqueta1</etiquetas>
+        <diametro>23</diametro>
+        <ancho>340</ancho>
+        <precio>50</precio>
+    </item>
+</items>

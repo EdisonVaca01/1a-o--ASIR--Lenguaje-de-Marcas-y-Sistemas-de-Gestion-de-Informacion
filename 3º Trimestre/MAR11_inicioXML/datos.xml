@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bikini>
+    <ordenadores>
+        <ordenador marca="Dell" cod="PC11111"/>
+        <ordenador marca="Asus" cod="PC11112"/>
+        <ordenador marca="Acer" cod="PC11113"/>
+    </ordenadores>
+    <personas>
+        <profesor edad="50" nombre="Cisco"/>
+        <alumno dni="12345678A" nombre="Alvarito"/>
+        <alumno dni="12345611B" nombre="Alvarita"/>
+        <alumno dni="15545611B" nombre="Wa$$0n"/>
+    </personas>
+    <otros>
+        <cosa nombre="extintor"/>
+    </otros>
+</bikini>

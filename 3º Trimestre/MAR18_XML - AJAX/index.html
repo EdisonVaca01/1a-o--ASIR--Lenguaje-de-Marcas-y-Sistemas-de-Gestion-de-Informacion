@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marzo 18</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <div class="col s12 m7">
+        <h2 class="header">Horizontal Card</h2>
+        <div class="card horizontal cyan darken-3">
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p id="Edison">I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Un <tr> por cada etiqueta modulo -->
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    // 1. Instanciar objeto XMLHttpRequest (guardar en variable)
+    var xhttp = new XMLHttpRequest();
+
+    // 2. Crear llamara open con el tipo (GET/POST) y el fichero correspondiente (datos.xml)
+    xhttp.open("GET", "datos.xml", true);
+
+    // 3. Enviar la peticion creada en el paso 2.
+    xhttp.send();
+
+    // 4. Recibo peticion de llamada AJAX
+    // this.readyState es 4 cuando la peticion ha finalizado.
+    // this.status es 200 cuando la peticion es correcta (fichero localizado correctamente)
+    // this.responseText devuelve el contenido del fichero en formato String (cadena de texto)
+    // this.responseXML devuelve el contenido del fichero en formato XML (etiquetas)
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseXML);
+            // document.getElementById()
+            // document.getElementsByClassName()
+            // document.getElementsByTagName()
+            let clase = this.responseXML.getElementsByTagName('clase')[0];
+            console.log(clase);
+
+            let personas = clase.childNodes[3];
+            console.log(personas);
+
+            let persona = personas.childNodes;
+            console.log(persona);
+
+            console.log(persona[1].innerHTML);
+            console.log(persona[1].textContent);
+            document.getElementById('Edison').innerHTML += persona[7].getAttribute('nombre');
+        }
+    };
+
+</script>
+
+</html>

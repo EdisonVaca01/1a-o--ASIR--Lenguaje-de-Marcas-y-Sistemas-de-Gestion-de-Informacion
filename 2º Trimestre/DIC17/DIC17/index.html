@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="texto">TEXTO QUE PUEDO MODIFICAR</p>
+    <button onclick="prompt('introduce datos')">PULSA PARA INTRODUCIR DATOS</button>
+    <button onclick="document.getElementById('texto').innerHTML = 5 + 6;">Cambiar texto</button>
+
+    <button onclick="document.getElementById('texto').style.backgroundColor = 'blue';">Cambiar fondo</button>
+
+    <button onclick="document.getElementById('texto').style.color = 'red';">Carmbiar color</button>
+
+    <button onclick="document.getElementById('texto').style.fontSize = 'xxx-large';">Carmbiar tamaño</button>
+
+    <br><br>
+    
+    <form>
+        <input id="input" type="text" placeholder="Introduce un texto"><br>
+        <small id ="small">Introduce texto</small>
+        <button type="button" onclick="
+        let input = document.getElementById('input').value;
+        let inputNumero = parseInt(input);
+
+       /* if(inputNumero >= 9){
+            alert('SB');
+        }else  if(inputNumero >= 6){
+            alert('NT');
+        }else if(inputNumero >= 5){
+            alert('SF');
+        }else{
+            alert('INS');
+        }*/
+
+        ">Enviar datos</button>
+    </form>
+    <img id="img" src="manzana.jpeg">
+    <button onclick="
+    let imagen = document.getElementById('img');
+    alert(imagen.getAttribute('src'));
+
+    imagen.setAttribute('src', 'naranjas.jpg');
+
+    ">CAMBIAR IMAGEN</button>
+
+    <p><a id ="enlace" href="https://www.google.es/">CLICK A UN ENLACE</a></p>
+    
+    <script src="app.js"></script>
+</body>
+</html>

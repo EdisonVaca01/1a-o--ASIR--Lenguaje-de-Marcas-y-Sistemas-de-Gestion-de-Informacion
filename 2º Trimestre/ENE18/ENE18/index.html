@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input name="mensaje" onkeyup="mostrar()" type="text" id="t">
+    <br>
+    <span id="error" style="display: none;">Error</span>
+</body>
+<script>
+    document.getElementById('t').addEventListener('keyup', mostrar());
+
+    function mostrar(){
+        let contenido = document.getElementById('t').value;
+
+        let mensajeError = document.getElementById('error');
+
+        if(contenido == ''){
+            mensajeError.style.display = 'block';
+            mensajeError.style.color = 'red';
+        }
+        if(contenido != ''){
+            mensajeError.style.display = 'none';
+        }
+        if(contenido == 'Limon'){
+            mensajeError.style.display = 'block';
+            mensajeError.style.color = 'green';
+            mensajeError.innerHTML = 'Producto encontrado';
+        }
+    }
+
+    /**
+     * Evento onkeyup 
+     * Se activa cuando pulso una tecla del teclado
+     */ 
+    
+    
+</script>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asir>
+    <!-- texto -->
+    <modulos>
+        <!-- texto -->
+        <primero>
+            <!-- texto  -->
+            <modulo id="1" nombre="BBDD" contenido="SQL"/>
+            <!-- texto -->
+            <modulo id="1" nombre="BBDD" contenido="SQL"/>
+            <!-- texto -->
+            <modulo id="1" nombre="BBDD" contenido="SQL"/>
+            <!-- texto -->
+            <modulo id="1" nombre="BBDD" contenido="SQL"/>
+            <!-- texto -->
+            <modulo id="1" nombre="BBDD" contenido="SQL"/>
+            <!-- texto -->
+            <modulo id="1" nombre="BBDD" contenido="SQL"/>
+            <!-- texto -->
+        </primero>
+        <!-- texto -->
+        <segundo>
+            
+        </segundo>
+        <!-- texto -->
+    </modulos>
+    <!-- texto  -->
+</asir>

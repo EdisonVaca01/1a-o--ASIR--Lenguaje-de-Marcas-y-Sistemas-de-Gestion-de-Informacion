@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edison_Vaca_Practica 2. JSON</title>
+        <!-- LOS 2 SIGUIENTES LINKS SON NECESARIOS PARA PODER UTILIZAR MATEREALIZE -->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- CREAMOS ESTE ENLACE PARA PODER REALIZAR EL ESTILO DE LA PÁGINA  -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!-- EN ESTE CASO  NOSOTROS AGREGAMOS EN EL BODY UN ONLOAD= "DATOS()"  EN EL QUE NOS VA A PERMITIR CARGAR LOS DATOS DE  LA FUNCTION DE JS DATOS()-->
+    <body onload="datos()">
+        <!-- EN ESTE CASO CERRAMOS TODO EN UN CONTAINER PARA PODER DISTRIBUIRNOS DE MEJOR FORMA Y "CERRARLO" TODO  -->
+        <div class="container">
+            <!-- ESTA PRIMERA LÍNEA SERÁ PARA EL NOMBRE Y LA DESCRIPCIÓN DE LA EMPRESA -->
+            <div class="row" id="titulo">
+            </div>
+            <br><br><br>
+            <div class="row">
+                <div class="col s15 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img id="img" src="">
+                        </div>
+                        <div class="card-content">
+                            <h5>
+                                <p id="apartado_1"></p>
+                            </h5>
+                            <p class="card-title" id="target_1"></p>
+                            <p id="fecha_1"></p>
+                            <p id="email_1"></p>
+                            <p id="antiguedad_1"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s15 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img id="img2" src="">
+                        </div>
+                        <div class="card-content">
+                            <h5>
+                                <p id="apartado_2"></p>
+                            </h5>
+                            <span class="card-title" id="target_2"></span>
+                            <p id="fecha_2"></p>
+                            <p id="email_2"></p>
+                            <p id="antiguedad_2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s15 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img id="img_3" src="">
+                        </div>
+                        <div class="card-content">
+                            <h5>
+                                <p id="apartado_3"></p>
+                            </h5>
+                            <span class="card-title" id="target_3"></span>
+                            <p id="fecha_3"></p>
+                            <p id="email_3"></p>
+                            <p id="antiguedad_3"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s15 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img id="img_4" src="">
+                        </div>
+                        <div class="card-content">
+                            <h5>
+                                <p id="apartado_4"></p>
+                            </h5>
+                            <span class="card-title" id="target_4"></span>
+                            <p id="fecha_4"></p>
+                            <p id="email_4"></p>
+                            <p id="antiguedad_4"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s15 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img id="img_5" src="">
+                        </div>
+                        <div class="card-content">
+                            <h5>
+                                <p id="apartado_5"></p>
+                            </h5>
+                            <span class="card-title" id="target_5"></span>
+                            <p id="fecha_5"></p>
+                            <p id="email_5"></p>
+                            <p id="antiguedad_5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--A PARTIR DE AHORA ESTAREMOS AGREGANDO  LAS UBICACIONES DE LE EMPRESA -->
+            <div class="row">
+                <div class="col s15 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/oficina1.jpg">
+                            <span class="card-title">
+                                <p id="ubicacion"></p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s15 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/oficina2.jpg">
+                            <span class="card-title">
+                                <p id="ubicacion2"></p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s15 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/oficina3.jpg">
+                            <span class="card-title">
+                                <p id="ubicacion3"></p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+    <!-- ENLACE AL ARCHIVO DE JS -->
+    <script src="js/app.js"></script>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Asir>
+    <Modulos>
+        <Primero>
+            <Modulo id="MP01" nombre="Formación Orientación Laboral"  contenido="Incorporación al trabajo y Prevención de riesgos laborales"/>
+            <Modulo id="MP02" nombre="Fundamentos de hardware" contenido="Arquitectura de sistemas, Instalación, configuración, recuperación de software,  Implantación y mantenimiento de CPD"/>
+            <Modulo id="MP03" nombre="Gestión de bases de datos" contenido="Introducción a las bases de datos y Gestión de seguridad de los datos"/>
+            <Modulo id="MP04" nombre="Implantación de sistemas operativos"  contenido="Seguridad, rendimiento y recursos y Implantación de software específico"/>
+            <Modulo id="MP05" nombre="Lenguajes de marcas y sistemas de gestión de información"  contenido="Programación con XML y Ámbitos de aplicación de XML"/>
+            <Modulo id="MP06" nombre="Planificación y administración de redes"  contenido="Introducción a las redes,Administración de dispositivos de red , Administración de dispositivos de red y Administración adelantada de redes"/>
+        </Primero>
+        <Segundo>
+            <Modulo id="MP07" nombre="Administración de sistemas gestores de bases de datos" contenido="Instalación y configuración de gestor de bases de datos y Protección de datos y confidencialidad "/>
+            <Modulo id="MP08" nombre="Administración de sistemas operativos" contenido="dministración adelantada de sistemas operativos y Automatización de tareas y lenguajes de guiones"/>
+            <Modulo id="MP09" nombre="Empresa e iniciativa emprendedora" contenido="Empresa e iniciativa emprendedora" />
+            <Modulo id="MP10" nombre="Implantación de aplicaciones web" contenido="Lenguajes de guiones de servidor y Administración de gestores de contenidos"/>
+            <Modulo id="MP11" nombre="Inglés" contenido="Inglés técnico"  />
+            <Modulo id="MP12" nombre="Seguridad y alta disponibilidad" contenido="Cortafuegos y servidores intermediarios y Alta disponibilidad "/>
+            <Modulo id="MP13" nombre="Servicios de red e internet" contenido="Servicios de nombres y configuración automática y Servicios web y de transferencia de ficheros"/>
+        </Segundo>
+    </Modulos>
+</Asir>
+<!--  En este archivo estámos creando la estructura del XML donde  agregaremos información como el id, contrenido y el nombre como se muesrta arriba-->

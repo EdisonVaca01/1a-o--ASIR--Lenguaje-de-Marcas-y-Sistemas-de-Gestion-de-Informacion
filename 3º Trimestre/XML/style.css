@@ -1,0 +1,16 @@
+/* En este caso nosotros agregamos estilo al contenedor como a los títulos por la presentación de la página.*/
+
+.container {
+    margin: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#header {
+    text-align: center;
+}
+
+#grado {
+    text-align: center;
+    padding-bottom: 4px;
+}

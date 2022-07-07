@@ -1,0 +1,44 @@
+En esta practica el objetivo es diseñar un HTML a partir del XML utilizado anteriormente con nombre "modulos.xml".
+
+- Parte 1: fichero modulos.xml.
+    Rellenar el contenido del fichero con los siguientes elementos:
+    a) autor: corresponde al autor/a de la práctica. Elementos: nombre, apellidos y correo.
+    b) modulos: correspondiente a los modulos del ciclo correspondiente.
+        Se deben rellenar tantas etiquetas modulo como aquellos existentes en primero y segundo.
+    c) profesores: correspondiente a los profesores que imparten materias en el ciclo.
+        Se deben poner tantas etiquetas materia como las que imparte dicho/a profesor/a.
+  
+- Partes 2. fichero plantilla.xsl
+    Realizar la plantilla xsl lo más completa posible utilizando los elementos vistos en clase.
+
+Se valora:
+- xml correcto, completo y sin modificar estructura.
+- Asociacion correcta xml-xsl.
+- Variedad de etiquetas xsl: 
+	stylesheet
+	output
+	template
+	sort 
+	for-each 
+	value-of 
+	variable 
+
+	choose
+        when compruba 1 cosa valida	
+        otherwise
+
+	if
+
+Entrega:
+La entrega estará abierta hasta el viernes 13 de mayo a las 23:59. Después NO se recogen ejercicios.
+El contenido debe tener el fichero xsl y el html transformado.
+
+Calificaciones:
+Para la presente práctica se suprimen las variaciones en las calificaciones en función del día. Se optará a la calificación máxima de 10 puntos hasta el último día.
+
+Formato:
+El formato de entrega consta de una carpeta comprimida con todo el contenido del proyecto con el formato "Apellido1_Apellido2_Nombre". 
+
+Penalizaciones:
+- Entrega sin comprimir: -1 punto al máximo posible.
+- Entrega con formato de carpeta incorrecto: -0,75 puntos al máximo posible.

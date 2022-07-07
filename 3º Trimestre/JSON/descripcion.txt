@@ -1,0 +1,3 @@
+<h1>Pali Wallet</h1>
+
+<h4>Es la cartera de navegador oficial de Syscoin desarrollada en una sólida asociación formada por la Fundación Syscoin y la empresa líder en desarrollo de cadenas de bloques.</h4>

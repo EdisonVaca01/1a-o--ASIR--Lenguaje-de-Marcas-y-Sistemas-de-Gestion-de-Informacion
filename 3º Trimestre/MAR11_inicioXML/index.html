@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Cod</th>
+            <th scope="col">Marca</th>
+          </tr>
+        </thead>
+        <tbody id="tablaOrdenadores"></tbody>
+      </table>
+</body>
+<script>
+    let datosXML = `<?xml version="1.0" encoding="UTF-8"?>
+        <bikini>
+            <ordenadores>
+                <ordenador marca="Dell" cod="PC11111"/>
+                <ordenador marca="Asus" cod="PC11112"/>
+                <ordenador marca="Acer" cod="PC11113"/>
+            </ordenadores>
+            <personas>
+                <profesor edad="50" nombre="Cisco"/>
+                <alumno dni="12345678A" nombre="Alvarito"/>
+                <alumno dni="12345611B" nombre="Alvarita"/>
+                <alumno dni="15545611B" nombre="Wa$$0n"/>
+            </personas>
+            <otros>
+                <cosa nombre="extintor"/>
+                <mesa>
+                    Mesa de color blanco con patas negras.
+                    Numero de patas 4.
+                </mesa>
+            </otros>
+        </bikini>`;
+        console.log(datosXML);
+        
+        let parser = new DOMParser();
+        let xmlCorrecto = parser.parseFromString(datosXML, "text/xml");
+
+        console.log(xmlCorrecto.getElementsByTagName('ordenador'));
+
+        let ordenador1 = xmlCorrecto.getElementsByTagName('ordenador')[0];
+        console.log(ordenador1);
+
+        let atributos = ordenador1.attributes;
+        console.log(atributos);
+
+        let atributoCod = atributos[1];
+        console.log(atributoCod.nodeValue);
+        console.log(atributoCod.textContent);
+        console.log(atributoCod.value);
+
+        console.log(ordenador1.getAttribute('cod'));
+
+        /**
+         * Acceder a la etiqueta Cosa y recoger el valor de su atributo nombre
+         */
+        let ordenador = xmlCorrecto.getElementsByTagName('cosa')[0];
+        console.log(ordenador);
+
+        let nombreOrdenador = ordenador.getAttribute('nombre');
+        console.log(nombreOrdenador);
+
+        /**
+         * Acceder a la etiqueta mesa y recoger el texto
+         */
+
+        let mesa = xmlCorrecto.getElementsByTagName('mesa')[0];
+        console.log(mesa);
+        console.log(mesa.innerHTML);
+        console.log(mesa.textContent);
+
+        /**
+         * Llenar la tabla con elementos del XML
+         */
+        let ordenadoresTodos = xmlCorrecto.getElementsByTagName('ordenador');
+        
+        // PASOS DEL PRIMER ORDENADOR
+        let primerOrdenador = ordenadoresTodos[0];
+        let marca1 = primerOrdenador.getAttribute('marca');
+        let cod1 = primerOrdenador.getAttribute('cod');
+
+        // PASOS DEL SEGUNDO ORDENADOR
+        let segundoOrdenador = ordenadoresTodos[1];
+        let marca2 = segundoOrdenador.getAttribute('marca');
+        let cod2 = segundoOrdenador.getAttribute('cod');
+
+        // PASOS DEL TERCER ORDENADOR
+        let tercerOrdenador = ordenadoresTodos[2];
+        let marca3 = tercerOrdenador.getAttribute('marca');
+        let cod3 = tercerOrdenador.getAttribute('cod');
+
+        let bodyTabla = document.getElementById('tablaOrdenadores');
+
+        bodyTabla.innerHTML = `
+            <tr>
+                <td>${cod1}</td>
+                <td>${marca1}</td>
+            </tr>
+            <tr>
+                <td>${cod2}</td>
+                <td>${marca2}</td>
+            </tr>
+            <tr>
+                <td>${cod3}</td>
+                <td>${marca3}</td> 
+            </tr>
+        `;
+</script>
+</html>

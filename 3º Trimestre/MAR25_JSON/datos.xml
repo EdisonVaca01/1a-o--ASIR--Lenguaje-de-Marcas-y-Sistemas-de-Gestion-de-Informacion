@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Asir>
+    <Modulos>
+        <Primero>
+            <Modulo id="MP01" nombre="Lenguaje de Marcas" contenido="HTML, CSS, JS, XML"/>
+            <Modulo id="MP02" nombre="Fundamentos del Hardware" contenido="Componentes de equipos, Hardware, Seguridad del Hardware"/>
+            <Modulo id="MP03" nombre="Gestion de base de datos" contenido="SQL, ACCES, Busquedas, Consultas"/>
+            <Modulo id="MP04" nombre="Implantacion de Sistemas Operativos" contenido="Linux, Windows"/>
+            <Modulo id="MP05" nombre="Formación a la Orientación Laboral" contenido="Contratos, Nóminas, Seguridad, Protocolos"/>
+            <Modulo id="MP06" nombre="Planificacion y administracion de redes" contenido="Cables, Tipos de redes, Routers, Switch. Conexiones"/>
+        </Primero>
+        <Segundo></Segundo>
+    </Modulos>
+</Asir>

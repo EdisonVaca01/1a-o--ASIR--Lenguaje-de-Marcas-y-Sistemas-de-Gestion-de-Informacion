@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="modulos.xsl" type="text/xsl"?>
+<ifp>
+    <!-- En este aparatado agregamos al autor de dicho trabajo-->
+    <autor>
+        <nombre>Edison Gabriel</nombre>
+        <apellidos>Vaca Cifuentes</apellidos>
+        <correo>iamedisonvaca@hotmail.com</correo>
+    </autor>
+    <!-- En este apartado estaremos agregando los 2 módulos "contenedor" -->
+    <modulos ciclo="Administración en Sistemas Operativos y Redes">
+        <!--Contenedor del primer curso -->
+        <curso nombre="primero">
+            <modulo id="MP01" nombre="Formación Orientación Laboral" profesor="Naza" tecnologias="Incorporación al trabajo, Prevención de riesgos laborales " />
+            <modulo id="MP02" nombre="Fundamentos de Hardware" profesor="Paco" tecnologias="Arquitectura de sistemas, Instalación, configuración y recuperación de software,Implantación y mantenimiento de CPD" />
+            <modulo id="MP03" nombre="Gestión  de Base de Datos" profesor="Paco" tecnologias="Introducción a las bases de datos,Gestión de seguridad de los datos" />
+            <modulo id="MP04" nombre="Impltantación de Sistemas Operativos" profesor="Paco" tecnologias="Instalación, configuración y explotación del sistema informático, Gestión de la información y de recursos en una red,Implantación de software específico, Seguridad, rendimiento y recursos. " />
+            <modulo id="MP05" nombre="Lenguajes de marcas y sistemas de gestión de información" profesor="Sergio" tecnologias="Programación con XML,Ámbitos de aplicación de XML, Sistemas de gestión de información empresarial" />
+            <modulo id="MP06" nombre="Planificación y Administración de redes" profesor="Paco" tecnologias="Introducción a las redes, Administración de dispositivos de red,Administración adelantada de redes." />
+        </curso>
+        <!--Contenedor del segundo curso -->
+        <curso nombre="segundo">
+            <modulo id="MP07" nombre="Administración de sistemas gestores de bases de datos" profesor="Paco" tecnologias="Instalación y configuración de gestor de bases de datos,Protección de datos y confidencialidad " />
+            <modulo id="MP08" nombre="Administración de sistemas operativos" profesor="Paco" tecnologias="Administración adelantada de sistemas operativos,Automatización de tareas y lenguajes de guiones" />
+            <modulo id="MP09" nombre="Empresa e iniciativa emprendedora" profesor="Naza" tecnologias="Empresa e iniciativa emprendedora" />
+            <modulo id="MP10" nombre="Implantación de aplicaciones web" profesor="Sergio" tecnologias="Lenguajes de guiones de servidor, Administración de gestores de contenidos" />
+            <modulo id="MP11" nombre="Inglés" profesor="Sergio" tecnologias="Inglés técnico" />
+            <modulo id="MP12" nombre="Seguridad física y Alta Disponibilidad" profesor="Paco" tecnologias="Seguridad física, lógica y legislación, Seguridad activa y acceso remoto, Cortafuegos y servidores intermediarios,Alta disponibilidad" />
+            <modulo id="MP13" nombre="Servicios de red e internet" profesor="Paco" tecnologias="Servicios de nombres y configuración automática,Servicios web y de transferencia de ficheros,Correo electrónico y mensajería, Servicios de audio y vídeo." />
+            <modulo id="MP14" nombre="Proyecto de administración de sistemas informáticos en red" profesor="Paco" tecnologias="Proyecto de administración de sistemas informáticos en red" />
+            <modulo id="MP15" nombre="FCT" profesor="Paco" tecnologias="Formación en el centros de trabajo" />
+        </curso>
+    </modulos>
+    <!--Ahora agregamos un nuevo "contenedor"-->
+    <profesores>
+        <!-- Agregamos infomormación del profesor -->
+        <profesor id="1">
+            <nombre>Sergio</nombre>
+            <correo>sergioteacher@yahoo.com</correo>
+            <!-- En este apartado agregamos la cantidad de materia que tiene el profesor-->
+            <materia>3</materia>
+        </profesor>
+        <profesor id="2">
+            <nombre>Naza</nombre>
+            <correo>nazateacher@yahoo.com</correo>
+            <materia>2</materia>
+        </profesor>
+        <profesor id="3">
+            <nombre>Paco</nombre>
+            <correo>pacoteacher@yahoo.com</correo>
+            <materia>10</materia>
+        </profesor>
+    </profesores>
+</ifp>

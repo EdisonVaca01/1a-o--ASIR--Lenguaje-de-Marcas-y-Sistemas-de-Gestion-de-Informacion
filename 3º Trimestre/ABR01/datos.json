@@ -1,0 +1,13 @@
+[
+    {
+        "trabajador" : {
+            "nombre" : "Sergio",
+            "apellido" : "Fontan"
+        },
+        "centro" : "iFP",
+        "numeroPlantas" : 3
+    },
+    {
+        "puntualidad" : "poca"
+    }
+]

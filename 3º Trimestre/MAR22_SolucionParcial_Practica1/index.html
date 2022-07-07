@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1. XML - ASIR</title>
+    <meta name="author" content="">
+</head>
+
+<body>
+
+</body>
+<script>
+    // 1. Instanciar objeto XMLHttpRequest (guardar en variable)
+    var xhttp = new XMLHttpRequest();
+
+    // 2. Crear llamara open con el tipo (GET/POST) y el fichero correspondiente (datos.xml)
+    xhttp.open("GET", "datos.xml", true);
+
+    // 3. Enviar la peticion creada en el paso 2.
+    xhttp.send();
+
+    // 4. Recibo peticion de llamada AJAX
+    // this.readyState es 4 cuando la peticion ha finalizado.
+    // this.status es 200 cuando la peticion es correcta (fichero localizado correctamente)
+    // this.responseText devuelve el contenido del fichero en formato String (cadena de texto)
+    // this.responseXML devuelve el contenido del fichero en formato XML (etiquetas)
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseXML);
+            let asir = this.responseXML.getElementsByTagName('asir')[0];
+            let modulos = asir.childNodes[1];
+            let primero = modulos.childNodes[1];
+            let segundo = modulos.childNodes[3];
+
+            /**
+             * Posiciones impares tengo las etiquetas.
+             * Posiciones pares tengo el texto
+             */
+            primero.childNodes[1].getAttribute('id');
+            primero.childNodes[1].getAttribute('nombre');
+            primero.childNodes[1].getAttribute('contenido');
+        }
+    };
+
+</script>
+
+</html>
